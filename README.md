@@ -7,3 +7,11 @@ This repository contains files that were used for the git workshop.
 ```
 git clone <url>
 ```
+
+## Requirements
+
+Working computer
+Terminal
+Git
+Keyboard
+Coffee
