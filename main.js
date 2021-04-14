@@ -1,6 +1,4 @@
-function sayHi() {
-  return "hello user";
-}
+
 let h, s, l;
 
 const helloInDifLanguage = [
@@ -51,6 +49,12 @@ function changeColor() {
   helloStyle.style.borderColor = `hsl(${h}, ${s-10}%, ${l-20}%)`;
 }
 
+function handleClick() {
+  console.log('first button was clicked 🚀')
+}
 
-
-
+var btn = document.querySelector('first-btn')
+btn.addEventListener('click', handleClick)
+function conflictsAreUgly {
+  console.log('🙏')
+}
