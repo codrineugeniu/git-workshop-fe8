@@ -10,8 +10,8 @@ git clone <url>
 
 ## Requirements
 
-Working computer
-Terminal
-Git
-Keyboard
-Coffee
+-Working computer
+-Terminal
+-Git
+-Keyboard
+-Coffee
