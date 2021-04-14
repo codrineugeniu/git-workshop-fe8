@@ -1,3 +1,24 @@
 body {
-  background-color: aliceblue;
+  background: rgb(214, 214, 214);
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+}
+#container {
+  display: flex;
+  justify-content: center;
+}
+#hello-container {
+  text-align: center;
+  text-shadow: 2px 2px 3px #383635;
+  line-height: 250px;
+  border-radius: 50% 50% 50% 0;
+  width: 400px;
+  height: 250px;
+  font-size: 80px;
+  transition: all 3s;
+  border: 10px solid;
 }
