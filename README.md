@@ -16,3 +16,4 @@ Terminal
 Git
 Keyboard
 Coffee
+Courage to break the code
