@@ -54,7 +54,7 @@ function handleClick() {
 }
 
 var btn = document.querySelector('first-btn')
-btn.addEventListener('click', handleClick)
-function conflictsAreUgly {
+// btn.addEventListener('click', handleClick)
+function conflictsAreUgly() {
   console.log('🙏')
 }
