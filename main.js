@@ -1,4 +1,3 @@
-
 let h, s, l;
 
 const helloInDifLanguage = [
@@ -31,14 +30,16 @@ function randomHSLValues() {
   s = Math.floor(Math.random() * 21 + 80);
   l = Math.floor(Math.random() * 11 + 55);
 }
+// const timerID = [];
+let timeID;
 function executeHello() {
-  setTimeout(function () {
-    
+  timeID = setTimeout(function () {
     changeColor();
     displayHello();
     console.log(sayHello);
     executeHello();
   }, 3000);
+  // timerID.push(timeID);
 }
 executeHello();
 let selectBody = document.querySelector("body");
@@ -46,15 +47,19 @@ function changeColor() {
   randomHSLValues();
 
   helloStyle.style.background = `hsl(${h}, ${s}%, ${l}%)`;
-  helloStyle.style.borderColor = `hsl(${h}, ${s-10}%, ${l-20}%)`;
+  helloStyle.style.borderColor = `hsl(${h}, ${s - 10}%, ${l - 20}%)`;
 }
 
 function handleClick() {
-  console.log('first button was clicked 🚀')
+  if (timeID) {
+    clearTimeout(timeID);
+    timeID = 0;
+  } else console.log(`Stop: timeout id is ${timeID}`);
 }
 
-var btn = document.querySelector('first-btn')
-// btn.addEventListener('click', handleClick)
+var btn = document.querySelector("#first-btn");
+btn.addEventListener("click", handleClick);
+
 function conflictsAreUgly() {
-  console.log('🙏')
+  console.log("🙏");
 }
